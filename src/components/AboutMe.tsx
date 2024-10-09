@@ -24,7 +24,7 @@ export default function AboutMe() {
   ];
 
   return (
-    <section className='mt-[70px] grid grid-cols-2 items-center justify-between gap-4'>
+    <section id='aboutMe' className='mt-[70px] grid grid-cols-2 items-center justify-between gap-4'>
       <div className='max-w-[680px]'>
         <div className='relative max-w-[545px]'>
           <PhotoRibbon />

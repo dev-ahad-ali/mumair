@@ -6,7 +6,7 @@ export default function Navbar() {
   const navLinks: { title: string; sectionId: string }[] = [
     {
       title: 'home',
-      sectionId: '/',
+      sectionId: '',
     },
     {
       title: 'about me',
@@ -39,9 +39,10 @@ export default function Navbar() {
           <Link
             key={sectionId}
             href={`#${sectionId}`}
-            className='px-[14px] py-[10px] capitalize hover:bg-accent'
+            className='group relative px-[14px] py-[10px] capitalize'
           >
             {title}
+            <span className='absolute bottom-0 left-0 h-1 w-0 rounded-full bg-accent duration-500 group-hover:w-full'></span>
           </Link>
         ))}
         <div className='ms-3'>

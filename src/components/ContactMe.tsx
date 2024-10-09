@@ -3,7 +3,7 @@ import SectionTitle from './ui/SectionTitle';
 
 export default function ContactMe() {
   return (
-    <section className='mt-[139px]'>
+    <section id='contact' className='mt-[139px]'>
       <SectionTitle
         title='Lets Design Together'
         description='Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.

@@ -30,7 +30,7 @@ export default function Services() {
     },
   ];
   return (
-    <section className='mt-[139px]'>
+    <section id='services' className='mt-[139px]'>
       <SectionTitle
         title='Services'
         description='Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium'
