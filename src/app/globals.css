@@ -26,6 +26,21 @@ html::-webkit-scrollbar {
 html {
   scrollbar-width: none;
 }
+
+.skill-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 29px;
+  height: 29px;
+  border: 3px solid #fd6f00;
+  border-radius: 100%;
+  background: #ffffff;
+  box-shadow: -2px -1px 17px -6px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  z-index: 99;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
