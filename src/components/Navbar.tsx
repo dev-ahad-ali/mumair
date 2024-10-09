@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import logo from '../../public/img/logo.png';
 import Link from 'next/link';
+import Button from './Button';
 export default function Navbar() {
   const navLinks: { title: string; sectionId: string }[] = [
     {
@@ -29,7 +30,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav className='flex items-center justify-between gap-4'>
+    <nav className='mt-[61px] flex items-center justify-between gap-4'>
       <Link href={'/'}>
         <Image src={logo} alt='logo' priority width={279} height={67} />
       </Link>
@@ -38,11 +39,14 @@ export default function Navbar() {
           <Link
             key={sectionId}
             href={`#${sectionId}`}
-            className='hover:bg-accent px-[14px] py-[10px] capitalize'
+            className='px-[14px] py-[10px] capitalize hover:bg-accent'
           >
             {title}
           </Link>
         ))}
+        <div className='ms-3'>
+          <Button name='Download CV' section='navbar' />
+        </div>
       </div>
     </nav>
   );
