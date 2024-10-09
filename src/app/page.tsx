@@ -1,6 +1,7 @@
 'use client';
 
 import AboutMe from '@/components/AboutMe';
+import ContactMe from '@/components/ContactMe';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Splash from '@/components/ui/Splash';
@@ -25,6 +26,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <AboutMe />
+          <ContactMe />
         </main>
       )}
     </>
