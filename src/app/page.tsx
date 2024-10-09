@@ -1,5 +1,6 @@
 'use client';
 
+import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Splash from '@/components/Splash';
 import { useEffect, useState } from 'react';
@@ -21,6 +22,7 @@ export default function Home() {
       ) : (
         <main className='mx-auto max-w-[1460px] px-5'>
           <Navbar />
+          <Hero />
         </main>
       )}
     </>
