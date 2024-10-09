@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Button from './Button';
+import Button from './ui/Button';
 import heroImg from '@/../public/img/heroimg.png';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import React from 'react';
 import Link from 'next/link';
-import PhotoRibbon from './PhotoRibbon';
+import PhotoRibbon from './ui/PhotoRibbon';
 
 export default function Hero() {
   const socialIcons: { icon: React.ReactElement; name: string; color?: string }[] = [

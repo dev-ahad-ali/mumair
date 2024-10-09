@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import logo from '../../public/img/logo.png';
+import logo from '@/../public/img/logo.png';
 import Link from 'next/link';
-import Button from './Button';
+import Button from './ui/Button';
 export default function Navbar() {
   const navLinks: { title: string; sectionId: string }[] = [
     {

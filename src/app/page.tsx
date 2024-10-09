@@ -2,7 +2,7 @@
 
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
-import Splash from '@/components/Splash';
+import Splash from '@/components/ui/Splash';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
