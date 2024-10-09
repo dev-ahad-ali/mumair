@@ -4,6 +4,7 @@ import AboutMe from '@/components/AboutMe';
 import ContactMe from '@/components/ContactMe';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
+import Services from '@/components/Services';
 import Splash from '@/components/ui/Splash';
 import { useEffect, useState } from 'react';
 
@@ -26,6 +27,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <AboutMe />
+          <Services />
           <ContactMe />
         </main>
       )}
