@@ -7,7 +7,7 @@ import Link from 'next/link';
 import PhotoRibbon from './ui/PhotoRibbon';
 
 export default function Hero() {
-  const socialIcons: { icon: React.ReactElement; name: string; color?: string }[] = [
+  const socialIcons: { icon: React.ReactElement; name: string; color: string }[] = [
     {
       icon: <FaFacebook />,
       name: 'facebook',
@@ -29,6 +29,16 @@ export default function Hero() {
       color: 'text-blue-700',
     },
   ];
+
+  const hoverColorChange = (action: string, id: string, color: string) => {
+    const socialIcon = document.querySelector(`#${id}`);
+    if (action === 'add') {
+      socialIcon?.classList.add(color);
+    } else {
+      socialIcon?.classList.remove(color);
+    }
+  };
+
   return (
     <section className='mt-[120px] flex items-center justify-between gap-5'>
       <div className='max-w-[714px]'>
@@ -37,7 +47,7 @@ export default function Hero() {
         <h1 className='text-[100px] font-bold leading-[106px]'>
           UI & UX <span className='block text-right'>Designer</span>
         </h1>
-        <p className='mt-7'>
+        <p className='mt-7 text-justify'>
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
           Aliquet donec morbi convallis pretium. Turpis tempus pharetra
         </p>
@@ -52,7 +62,14 @@ export default function Hero() {
         </div>
         <div className='flex items-center gap-[25px]'>
           {socialIcons?.map(({ icon, name, color }) => (
-            <Link href={'/'} key={name} className={`text-3xl hover:${color}`}>
+            <Link
+              id={name}
+              href={'/'}
+              key={name}
+              onMouseEnter={() => hoverColorChange('add', name, color)}
+              onMouseLeave={() => hoverColorChange('remove', name, color)}
+              className={`text-3xl duration-300`}
+            >
               {icon}
             </Link>
           ))}

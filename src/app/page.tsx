@@ -1,5 +1,6 @@
 'use client';
 
+import AboutMe from '@/components/AboutMe';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Splash from '@/components/ui/Splash';
@@ -23,6 +24,7 @@ export default function Home() {
         <main className='mx-auto max-w-[1460px] px-5'>
           <Navbar />
           <Hero />
+          <AboutMe />
         </main>
       )}
     </>
