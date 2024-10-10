@@ -2,44 +2,11 @@
 import Image from 'next/image';
 import Button from './ui/Button';
 import heroImg from '@/../public/img/heroimg.png';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import React from 'react';
-import Link from 'next/link';
 import PhotoRibbon from './ui/PhotoRibbon';
+import SocialIcons from './ui/SocialIcons';
 
 export default function Hero() {
-  const socialIcons: { icon: React.ReactElement; name: string; color: string }[] = [
-    {
-      icon: <FaFacebook />,
-      name: 'facebook',
-      color: 'text-blue-500',
-    },
-    {
-      icon: <FaTwitter />,
-      name: 'twitter',
-      color: 'text-blue-300',
-    },
-    {
-      icon: <FaInstagram />,
-      name: 'instagram',
-      color: 'text-pink-600',
-    },
-    {
-      icon: <FaLinkedin />,
-      name: 'linkedin',
-      color: 'text-blue-700',
-    },
-  ];
-
-  const hoverColorChange = (action: string, id: string, color: string) => {
-    const socialIcon = document.querySelector(`#${id}`);
-    if (action === 'add') {
-      socialIcon?.classList.add(color);
-    } else {
-      socialIcon?.classList.remove(color);
-    }
-  };
-
   return (
     <section className='mt-[120px] flex items-center justify-between gap-5'>
       <div className='max-w-[714px]'>
@@ -61,20 +28,7 @@ export default function Hero() {
           <PhotoRibbon />
           <Image src={heroImg} alt='image of umair' />
         </div>
-        <div className='flex items-center gap-[25px]'>
-          {socialIcons?.map(({ icon, name, color }) => (
-            <Link
-              id={name}
-              href={'/'}
-              key={name}
-              onMouseEnter={() => hoverColorChange('add', name, color)}
-              onMouseLeave={() => hoverColorChange('remove', name, color)}
-              className={`text-3xl duration-300`}
-            >
-              {icon}
-            </Link>
-          ))}
-        </div>
+        <SocialIcons section='hero' />
       </div>
     </section>
   );

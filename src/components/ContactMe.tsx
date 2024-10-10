@@ -13,7 +13,7 @@ export default function ContactMe() {
         <input
           type='email'
           placeholder='Enter your email'
-          className='block h-[75px] flex-1 rounded-[14px] border border-[#AFAFAF] ps-[26px]'
+          className='block h-[75px] flex-1 rounded-[14px] border border-[#AFAFAF] ps-[26px] focus:outline-accent'
         />
         <Button name='Contact Me' section='contactMe' />
       </div>

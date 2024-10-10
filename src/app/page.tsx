@@ -2,6 +2,7 @@
 
 import AboutMe from '@/components/AboutMe';
 import ContactMe from '@/components/ContactMe';
+import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Services from '@/components/Services';
@@ -23,13 +24,16 @@ export default function Home() {
       {loading ? (
         <Splash />
       ) : (
-        <main className='mx-auto max-w-[1460px] px-5'>
+        <>
           <Navbar />
-          <Hero />
-          <AboutMe />
-          <Services />
-          <ContactMe />
-        </main>
+          <main className='mx-auto max-w-[1460px] px-5'>
+            <Hero />
+            <AboutMe />
+            <Services />
+            <ContactMe />
+          </main>
+          <Footer />
+        </>
       )}
     </>
   );
