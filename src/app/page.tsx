@@ -5,6 +5,7 @@ import ContactMe from '@/components/ContactMe';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
+import Projects from '@/components/Projects';
 import Services from '@/components/Services';
 import Splash from '@/components/ui/Splash';
 import { useEffect, useState } from 'react';
@@ -30,6 +31,7 @@ export default function Home() {
             <Hero />
             <AboutMe />
             <Services />
+            <Projects />
             <ContactMe />
           </main>
           <Footer />

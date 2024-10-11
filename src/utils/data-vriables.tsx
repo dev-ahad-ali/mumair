@@ -4,6 +4,9 @@ import webDesignIcon from '@/../public/img/webDesignIcon.png';
 import appDesignIcon from '@/../public/img/appDesignIcon.png';
 import graphicDesignIcon from '@/../public/img/graphicDesignIcon.png';
 import { StaticImageData } from 'next/image';
+import project1 from '@/../public/img/project1.png';
+import project2 from '@/../public/img/project2.png';
+import project3 from '@/../public/img/project3.png';
 
 export const navLinks: { title: string; sectionId: string }[] = [
   {
@@ -75,5 +78,68 @@ export const servicesInfo: { icon: StaticImageData; name: string; description: s
     icon: graphicDesignIcon,
     name: 'Graphic Design',
     description: 'Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum',
+  },
+];
+
+export const projectsInfo: { image: StaticImageData; title: string; category: string }[] = [
+  {
+    image: project1,
+    title: 'AirCalling Landing Page Design',
+    category: 'web design',
+  },
+  {
+    image: project1,
+    title: 'Ecom Web Page Design',
+    category: 'app design',
+  },
+  {
+    image: project1,
+    title: 'AirCalling Landing Page Design',
+    category: 'graphic design',
+  },
+  {
+    image: project2,
+    title: 'AirCalling Landing Page Design',
+    category: 'web design',
+  },
+  {
+    image: project2,
+    title: 'AirCalling Landing Page Design',
+    category: 'graphic design',
+  },
+  {
+    image: project2,
+    title: 'Business Landing Page Design',
+    category: 'UI/UX',
+  },
+  {
+    image: project3,
+    title: 'AirCalling Landing Page Design',
+    category: 'graphic design',
+  },
+  {
+    image: project3,
+    title: 'AirCalling Landing Page Design',
+    category: 'web design',
+  },
+  {
+    image: project3,
+    title: 'Business Landing Page Design',
+    category: 'UI/UX',
+  },
+  {
+    image: project3,
+    title: 'Ecom Web Page Design',
+    category: 'app design',
+  },
+  {
+    image: project2,
+    title: 'Ecom Web Page Design',
+    category: 'app design',
+  },
+  {
+    image: project1,
+    title: 'Business Landing Page Design',
+    category: 'UI/UX',
   },
 ];
