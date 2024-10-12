@@ -7,6 +7,7 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
 import Services from '@/components/Services';
+import Testimonial from '@/components/Testimonial';
 import Splash from '@/components/ui/Splash';
 import { useEffect, useState } from 'react';
 
@@ -32,6 +33,9 @@ export default function Home() {
             <AboutMe />
             <Services />
             <Projects />
+          </main>
+          <Testimonial />
+          <main className='mx-auto max-w-[1460px] px-5'>
             <ContactMe />
           </main>
           <Footer />

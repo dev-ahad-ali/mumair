@@ -2,27 +2,9 @@ import Image from 'next/image';
 import aboutMeImg from '@/../public/img/aboutmeImg.png';
 import PhotoRibbon from './ui/PhotoRibbon';
 import SkillSlider from './ui/SkillSlider';
+import { skillInfo } from '@/utils/data-vriables';
 
 export default function AboutMe() {
-  const skillInfo: { name: string; point: number }[] = [
-    {
-      name: 'UX',
-      point: 90,
-    },
-    {
-      name: 'Website Design',
-      point: 85,
-    },
-    {
-      name: 'App Design ',
-      point: 95,
-    },
-    {
-      name: 'Graphic Design ',
-      point: 90,
-    },
-  ];
-
   return (
     <section id='aboutMe' className='mt-[70px] grid grid-cols-2 items-center justify-between gap-4'>
       <div className='max-w-[680px]'>

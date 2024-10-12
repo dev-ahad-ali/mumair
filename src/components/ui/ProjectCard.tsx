@@ -8,8 +8,8 @@ export default function ProjectCard({
   const { image, title, category } = project;
 
   return (
-    <div>
-      <div>
+    <div className='group'>
+      <div className='rounded-xl duration-300 group-hover:shadow-xl'>
         <Image src={image} alt={title} />
       </div>
       <h5 className='mt-[37px] capitalize text-accent'>{category}</h5>

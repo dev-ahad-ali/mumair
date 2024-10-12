@@ -40,7 +40,19 @@ html {
   cursor: pointer;
   z-index: 99;
 }
+.swiper-pagination-bullet {
+  background-color: #d9d9d9 !important;
+  width: 57px !important;
+  height: 17px !important;
+  border-radius: 8px 8px !important;
+}
 
+.swiper-pagination-bullet-active {
+  background-color: #fd6f00 !important;
+  width: 57px !important;
+  height: 17px !important;
+  border-radius: 8px 8px !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

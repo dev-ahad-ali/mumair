@@ -3,12 +3,21 @@ import uxIcon from '@/../public/img/uxIcon.png';
 import webDesignIcon from '@/../public/img/webDesignIcon.png';
 import appDesignIcon from '@/../public/img/appDesignIcon.png';
 import graphicDesignIcon from '@/../public/img/graphicDesignIcon.png';
-import { StaticImageData } from 'next/image';
 import project1 from '@/../public/img/project1.png';
 import project2 from '@/../public/img/project2.png';
 import project3 from '@/../public/img/project3.png';
+import testimonialImg1 from '@/../public/img/reviewImg1.png';
+import testimonialImg2 from '@/../public/img/reviewImg2.png';
+import {
+  NavLinks,
+  ProjectsInfo,
+  ServicesInfo,
+  SkillInfo,
+  SocialIcons,
+  TestimonialInfo,
+} from '@/types/types';
 
-export const navLinks: { title: string; sectionId: string }[] = [
+export const navLinks: NavLinks = [
   {
     title: 'home',
     sectionId: '',
@@ -35,7 +44,7 @@ export const navLinks: { title: string; sectionId: string }[] = [
   },
 ];
 
-export const socialIcons: { icon: React.ReactElement; name: string; color: string }[] = [
+export const socialIcons: SocialIcons = [
   {
     icon: <FaFacebook />,
     name: 'facebook',
@@ -58,7 +67,26 @@ export const socialIcons: { icon: React.ReactElement; name: string; color: strin
   },
 ];
 
-export const servicesInfo: { icon: StaticImageData; name: string; description: string }[] = [
+export const skillInfo: SkillInfo = [
+  {
+    name: 'UX',
+    point: 90,
+  },
+  {
+    name: 'Website Design',
+    point: 85,
+  },
+  {
+    name: 'App Design ',
+    point: 95,
+  },
+  {
+    name: 'Graphic Design ',
+    point: 90,
+  },
+];
+
+export const servicesInfo: ServicesInfo = [
   {
     icon: uxIcon,
     name: 'UI/UX',
@@ -81,7 +109,7 @@ export const servicesInfo: { icon: StaticImageData; name: string; description: s
   },
 ];
 
-export const projectsInfo: { image: StaticImageData; title: string; category: string }[] = [
+export const projectsInfo: ProjectsInfo = [
   {
     image: project1,
     title: 'AirCalling Landing Page Design',
@@ -141,5 +169,36 @@ export const projectsInfo: { image: StaticImageData; title: string; category: st
     image: project1,
     title: 'Business Landing Page Design',
     category: 'UI/UX',
+  },
+];
+
+export const testimonialInfo: TestimonialInfo = [
+  {
+    image: testimonialImg1,
+    name: 'Name',
+    occupation: 'ceo',
+    message:
+      'Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.',
+  },
+  {
+    image: testimonialImg1,
+    name: 'Name',
+    occupation: 'ceo',
+    message:
+      'Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.',
+  },
+  {
+    image: testimonialImg2,
+    name: 'Name',
+    occupation: 'ceo',
+    message:
+      'Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.',
+  },
+  {
+    image: testimonialImg1,
+    name: 'Name',
+    occupation: 'ceo',
+    message:
+      'Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.',
   },
 ];
