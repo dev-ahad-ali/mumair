@@ -16,7 +16,7 @@ export default function ServicesCard({
       </div>
       <div>
         <h3 className='text-[32px] font-semibold'>{name}</h3>
-        <p className='text-justify'>{description}</p>
+        <p className='mt-[11px] text-justify'>{description}</p>
       </div>
     </div>
   );

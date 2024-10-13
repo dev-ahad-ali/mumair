@@ -13,7 +13,7 @@ export default function Testimonial() {
         title='Testimonials'
         description='Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium'
       />
-      <div className='mt-[72px]'>
+      <div className='mt-[112px]'>
         <Swiper
           slidesPerView={'auto'}
           spaceBetween={62}
@@ -22,7 +22,7 @@ export default function Testimonial() {
             clickable: true,
           }}
           modules={[Pagination]}
-          className='mySwiper !pb-[87px]'
+          className='mySwiper !pb-[116px]'
         >
           {testimonialInfo?.map(({ image, name, occupation, message }, idx) => (
             <SwiperSlide key={idx} className='max-w-[1087px]'>

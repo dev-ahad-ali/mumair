@@ -6,7 +6,7 @@ import SocialIcons from './ui/SocialIcons';
 export default function Footer() {
   return (
     <footer className='mt-[139px] bg-[#F8F8F8]'>
-      <section className='flex flex-col items-center pb-[69px] pt-[109px]'>
+      <section className='flex flex-col items-center pb-[69px] pt-[115px]'>
         <div>
           <div className='flex justify-center'>
             <Image src={logo} alt='logo' />

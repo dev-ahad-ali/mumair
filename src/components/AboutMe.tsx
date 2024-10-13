@@ -1,16 +1,16 @@
 import Image from 'next/image';
-import aboutMeImg from '@/../public/img/aboutmeImg.png';
+import aboutMeImg from '@/../public/img/aboutmeImg.svg';
 import PhotoRibbon from './ui/PhotoRibbon';
 import SkillSlider from './ui/SkillSlider';
 import { skillInfo } from '@/utils/data-vriables';
 
 export default function AboutMe() {
   return (
-    <section id='aboutMe' className='mt-[70px] grid grid-cols-2 items-center justify-between gap-4'>
-      <div className='max-w-[680px]'>
-        <div className='relative max-w-[545px]'>
+    <section id='aboutMe' className='mt-[70px] flex items-center justify-between gap-4'>
+      <div className='min-w-[680px]'>
+        <div className='relative'>
           <PhotoRibbon />
-          <Image src={aboutMeImg} width={545} alt='Image of Umair' />
+          <Image src={aboutMeImg} alt='Image of Umair' />
         </div>
       </div>
       <div>

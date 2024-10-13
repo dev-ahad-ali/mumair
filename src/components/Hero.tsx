@@ -8,12 +8,15 @@ import SocialIcons from './ui/SocialIcons';
 
 export default function Hero() {
   return (
-    <section className='mt-[120px] flex items-center justify-between gap-5'>
-      <div className='max-w-[714px]'>
-        <h6 className='font-semibold'>Hi I am</h6>
-        <h5 className='text-[32px] font-semibold text-accent'>Muhammad Umair</h5>
-        <h1 className='text-[100px] font-bold leading-[106px]'>
-          UI & UX <span className='block text-right'>Designer</span>
+    <section className='mt-[120px] flex items-center justify-between gap-5 pe-5'>
+      <div className='max-w-[714px] space-y-9'>
+        <h6 className='font-semibold leading-none tracking-widest'>Hi I am</h6>
+        <h5 className='text-[32px] font-semibold leading-none tracking-wider text-accent'>
+          Muhammad Umair
+        </h5>
+        <h1 className='text-[100px] font-bold leading-[80px]'>
+          <span className=''>UI & UX</span>
+          <span className='block pe-2 text-right tracking-wide'>Designer</span>
         </h1>
         <p className='mt-7 text-justify'>
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.

@@ -21,13 +21,13 @@ export default function Projects() {
   }, [currentCategory]);
 
   return (
-    <section className='mt-[139px]'>
+    <section className='mt-[122px]'>
       <SectionTitle
         title='My Projects'
         description='Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus'
       />
       <div>
-        <div className='mt-[59px] flex items-center justify-center gap-[17px]'>
+        <div className='mt-[80px] flex items-center justify-center gap-[17px] pe-[104px]'>
           {categories?.map((category) => (
             <button
               onClick={() => setCurrentCategory(category)}

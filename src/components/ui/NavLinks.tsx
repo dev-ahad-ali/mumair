@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function NavLinks() {
   return (
-    <div className='flex items-center gap-3'>
+    <div className='flex items-center gap-5'>
       {navLinks?.map(({ title, sectionId }) => (
         <Link
           key={sectionId}

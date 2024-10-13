@@ -4,12 +4,12 @@ import ServicesCard from './ui/ServicesCard';
 
 export default function Services() {
   return (
-    <section id='services' className='mt-[139px]'>
+    <section id='services' className='mt-[130px]'>
       <SectionTitle
         title='Services'
         description='Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium'
       />
-      <div className='mt-20 grid grid-cols-4 gap-[31px]'>
+      <div className='mt-[72px] grid grid-cols-4 gap-[31px]'>
         {servicesInfo?.map(({ icon, name, description }) => (
           <ServicesCard key={name} icon={icon} name={name} description={description} />
         ))}
