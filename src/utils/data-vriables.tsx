@@ -48,22 +48,22 @@ export const socialIcons: SocialIcons = [
   {
     icon: <FaFacebook />,
     name: 'facebook',
-    color: 'text-blue-500',
+    color: '#3b82f6',
   },
   {
     icon: <FaTwitter />,
     name: 'twitter',
-    color: 'text-blue-300',
+    color: '#93c5fd',
   },
   {
     icon: <FaInstagram />,
     name: 'instagram',
-    color: 'text-pink-600',
+    color: '#db2777',
   },
   {
     icon: <FaLinkedin />,
     name: 'linkedin',
-    color: 'text-blue-700',
+    color: '#1d4ed8',
   },
 ];
 

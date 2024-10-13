@@ -1,8 +1,8 @@
 export const hoverColorChange = (action: string, id: string, color: string) => {
   const socialIcon = document.getElementById(id);
   if (action === 'add') {
-    socialIcon?.classList.add(color);
+    socialIcon!.style.color = color;
   } else {
-    socialIcon?.classList.remove(color);
+    socialIcon!.style.color = '#000000';
   }
 };
