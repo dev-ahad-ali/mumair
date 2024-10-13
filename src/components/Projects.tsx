@@ -21,7 +21,7 @@ export default function Projects() {
   }, [currentCategory]);
 
   return (
-    <section className='mt-[122px]'>
+    <section id='projects' className='mt-[122px]'>
       <SectionTitle
         title='My Projects'
         description='Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus'

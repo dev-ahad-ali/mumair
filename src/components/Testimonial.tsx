@@ -8,7 +8,7 @@ import TestimonialCard from './ui/TestimonialCard';
 
 export default function Testimonial() {
   return (
-    <section className='mt-[139px]'>
+    <section id='testimonial' className='mt-[139px]'>
       <SectionTitle
         title='Testimonials'
         description='Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium'
