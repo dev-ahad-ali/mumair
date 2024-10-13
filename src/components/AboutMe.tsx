@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import aboutMeImg from '@/../public/img/aboutmeImg.svg';
+import aboutMeImg from '@/../public/img/aboutmeImg.png';
 import PhotoRibbon from './ui/PhotoRibbon';
 import SkillSlider from './ui/SkillSlider';
 import { skillInfo } from '@/utils/data-vriables';
